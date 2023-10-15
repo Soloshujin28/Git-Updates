@@ -1,0 +1,251 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    // declaring variable
+
+    int i;
+    int ans1, ans2, ans3, ans4, ans5;
+    int point01 = 0, point02 = 0, point03 = 0, point04 = 0, point05 = 0;
+    int totalscore = 0;
+
+    // asking the user if they want to play
+    // asking the user for input
+
+    printf("Welcome to game\n\n");
+    printf(">Press 1 to start the game\n");
+    printf(">Press 2 to quit the game\n");
+
+    scanf("%d", &i);
+
+    if (i == 1)
+
+    {
+        printf("The game has started\n\n");
+
+        // First question
+
+        if (i == 1)
+        {
+            // using nested if conditional statement
+
+            printf("1. Which search engine was publicly released on the internet for public use??\n\n");
+            printf("\n");
+
+            printf("    1. Google\n");
+            printf("\n");
+
+            printf("    2.  Yahoo\n");
+            printf("\n");
+
+            printf("    3.  Bing\n");
+            printf("\n");
+
+            printf("    4. None of the above\n");
+            printf("\n");
+
+            printf("    Enter Your Answer\n :");
+            printf("\n");
+
+            scanf("%d", &ans1);
+
+            if (ans1 == 1)
+
+            // if else conditional statement
+            {
+                printf("Correct Answer ! \n");
+                point01 = 5;
+                printf("\n");
+
+                printf("Congrats ! You have earned %d point\n\n", point01);
+            }
+            else
+            {
+                printf("Opps ! Wrong Answer\n");
+                point01 = 0;
+                printf("\n");
+
+                printf("Opps ! You have earned %d point\n", point01);
+            }
+
+            // Second Question
+
+            printf("2. Who is the author of the play 'Romeo and Juliet'\n\n");
+            printf("\n");
+
+            printf("    1. Charles Dickens\n\n");
+            printf("\n");
+            printf("    2.  William Shakespeare\n\n");
+            printf("\n");
+
+            printf("    3.  Jane Austen\n\n");
+            printf("\n");
+
+            printf("    4. Mark Twain\n\n");
+            printf("\n");
+
+            printf("    Enter Your Number:\n\n");
+            printf("\n");
+
+            scanf("%d", &ans2);
+            if (ans2 == 2)
+
+            // using nested if conditional statement
+
+            {
+                printf("Correct Answer !\n");
+                point02 = 5;
+                printf("\n");
+
+                printf("Congrats ! You have earned %d point\n\n", point02);
+                printf("\n");
+            }
+            else
+            {
+                printf("Opps ! Wrong Answer\n\n");
+                point02 = 0;
+                printf("\n");
+
+                printf("Opps ! You have earned %d point\n\n\n", point02);
+            }
+            printf("\n");
+
+            // Thrid Question
+
+            printf("3. What is the capital city of Australia?\n\n");
+
+            printf("    1. Sydney\n\n");
+            printf("\n");
+
+            printf("    2. Melbourne\n\n ");
+            printf("\n");
+
+            printf("    3.  Canbera\n\n");
+            printf("\n");
+
+            printf("    4. Brisbane\n\n");
+            printf("\n");
+
+            printf("    Enter Your Number:\n\n");
+            printf("\n");
+
+            scanf("%d", &ans3);
+            if (ans3 == 3)
+            // using nested if conditional statement
+
+            {
+                printf("Correct Answer !\n\n");
+                point03 = 5;
+                printf("\n");
+
+                printf("Congrats ! You have earned %d point\n\n", point03);
+                printf("\n");
+            }
+            else
+            {
+                printf("Opps ! Wrong Answer\n\n");
+                point03 = 0;
+                printf("\n");
+
+                printf("Opps ! You have earned %d point\n\n", point03);
+                printf("\n");
+            }
+
+            // Fourth Question
+
+            printf("4. In which year did the Titanic sink?\n\n");
+            printf("\n");
+
+            printf("    1. 1910\n\n");
+            printf("\n");
+
+            printf("    2. 1912\n\n");
+            printf("\n");
+
+            printf("    3.  1915\n\n");
+            printf("\n");
+
+            printf("    4. 1920\n\n");
+            printf("\n");
+
+            printf("    Enter Your Number:\n\n");
+
+            scanf("%d", &ans4);
+            if (ans4 == 2)
+
+            // using nested if conditional statement
+            {
+                printf("Correct Answer !\n\n");
+                point04 = 5;
+                printf("\n");
+
+                printf("Congrats ! You have earned %d point\n\n", point04);
+                printf("\n");
+            }
+            else
+            {
+                printf("Opps ! Wrong Answer\n\n");
+                point04 = 0;
+                printf("\n");
+                printf("Opps ! You have earned %d point\n\n", point04);
+                printf("\n");
+            }
+
+            // Fifth Question
+
+            printf("5. What is the largest mammal in the world? \n\n");
+            printf("\n");
+            printf("    1. Elephant\n\n");
+            printf("\n");
+            printf("    2.  Blue Whale\n\n");
+            printf("\n");
+            printf("    3.  Giraffe\n\n");
+            printf("\n");
+            printf("    4. Gorilla\n\n");
+            printf("\n");
+            printf("    Enter Your Number:\n\n");
+            printf("\n");
+            scanf("%d", &ans5);
+            if (ans5 == 2)
+
+            // using nested if conditional statement
+            {
+                printf("Correct Answer !\n\n");
+                point05 = 5;
+                printf("\n");
+                printf("Congrats ! You have earned %d point\n\n", point05);
+                printf("\n");
+            }
+            else
+            {
+                printf("Opps ! Wrong Answer\n\n");
+                point05 = 0;
+                printf("\n");
+                printf("Opps ! You have earned %d point\n\n", point05);
+                printf("\n");
+            }
+
+            // addition of total score
+
+            totalscore = point01 + point02 + point03 + point04 + point05;
+            printf("\n");
+            printf("Total Score earned: %d\n\n", totalscore);
+            printf("\n");
+        }
+
+        else if (i == 2)
+        {
+            printf("The game has ended\n\n");
+            printf("\n");
+        }
+
+        else
+        {
+            printf("Invalid input\n\n");
+        }
+
+        return 0;
+    }
+
+    return 0;
+}
